@@ -11,14 +11,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="pages.css">
-    
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init("YOUR_PUBLIC_KEY"); // 🔴 Replace with your EmailJS Public Key
+    </script>
 </head>
 <body>
     <!-- Header & Navigation -->
     <header id="mainHeader">
         <div class="container header-container">
             <a href="#home" class="logo-container">
-                <!-- Custom Logo SVG -->
                 <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -63,7 +67,6 @@
         
         <div class="container">
             <div class="hero-logo-container">
-                <!-- Animated Logo -->
                 <svg class="hero-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <linearGradient id="heroLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -89,15 +92,15 @@
             </div>
             
             <div class="hero-badge pulse-animation">
-                <i class="fas fa-key"></i> Digital Transformation Experts
+                <i class="fas fa-chart-line"></i> Revenue Growth Experts
             </div>
             
             <h1 class="reveal-text animate__animated animate__fadeInUp">
-                Unlock Your <span>Digital Potential</span> With Integrated IT Solutions
+                DRIVING REVENUE. <span>DELIVERING RESULTS.</span>
             </h1>
             
             <p class="animate__animated animate__fadeInUp animate__delay-1s">
-                Skyworld revenue group delivers comprehensive, technology-driven solutions that empower businesses to streamline operations, maximize revenue, and excel in the digital landscape through our specialized suite of services.
+                Skyworld Revenue Group delivers comprehensive, technology-driven solutions that empower businesses to streamline operations, maximize revenue, and excel in the digital landscape through our specialized suite of services.
             </p>
             
             <div class="hero-btns animate__animated animate__fadeInUp animate__delay-2s">
@@ -109,7 +112,6 @@
                 </a>
             </div>
             
-            <!-- UPDATED HERO STATS WITH REALISTIC NUMBERS -->
             <div class="updated-hero-stats">
                 <div class="updated-hero-stat">
                     <div class="updated-hero-stat-number" data-count="12">0</div>
@@ -136,7 +138,7 @@
         </div>
     </section>
 
-    <!-- Stats Section with Updated Numbers -->
+    <!-- Stats Section -->
     <section class="stats-section">
         <div class="container">
             <div class="section-title" style="color: white;">
@@ -150,19 +152,16 @@
                     <div class="stat-text">Specialized IT Services</div>
                     <div class="stat-description">Comprehensive solutions from development to support</div>
                 </div>
-                
                 <div class="stat-item">
                     <div class="stat-number" data-count="427">0</div>
                     <div class="stat-text">Clients Empowered</div>
                     <div class="stat-description">Businesses transformed across 6 industries</div>
                 </div>
-                
                 <div class="stat-item">
                     <div class="stat-number" data-count="99.2">0<span>%</span></div>
                     <div class="stat-text">Client Satisfaction</div>
                     <div class="stat-description">Based on post-service surveys</div>
                 </div>
-                
                 <div class="stat-item">
                     <div class="stat-number" data-count="24">0<span>/7</span></div>
                     <div class="stat-text">Support Coverage</div>
@@ -176,19 +175,16 @@
                     <div class="stat-text">Industry Verticals</div>
                     <div class="stat-description">Healthcare, E-commerce, SMEs & more</div>
                 </div>
-                
                 <div class="stat-item">
                     <div class="stat-number" data-count="150">0<span>+</span></div>
                     <div class="stat-text">Certified Experts</div>
                     <div class="stat-description">Highly skilled professionals on our team</div>
                 </div>
-                
                 <div class="stat-item">
                     <div class="stat-number" data-count="35">0<span>%</span></div>
                     <div class="stat-text">Average Revenue Growth</div>
                     <div class="stat-description">For clients within first year</div>
                 </div>
-                
                 <div class="stat-item">
                     <div class="stat-number" data-count="48">0<span>h</span></div>
                     <div class="stat-text">Average Response Time</div>
@@ -207,11 +203,8 @@
             </div>
             
             <div class="services-grid">
-                <!-- Service 1 -->
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
                     <div class="service-content">
                         <h3>E-commerce Solutions</h3>
                         <p>Complete Amazon marketplace management, Shopify store development, and digital marketing services to accelerate online sales.</p>
@@ -225,12 +218,8 @@
                         </ul>
                     </div>
                 </div>
-                
-                <!-- Service 2 -->
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
                     <div class="service-content">
                         <h3>Healthcare IT Solutions</h3>
                         <p>Comprehensive medical billing, RCM solutions, and HIPAA-compliant technology services for healthcare providers.</p>
@@ -244,12 +233,8 @@
                         </ul>
                     </div>
                 </div>
-                
-                <!-- Service 3 -->
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
                     <div class="service-content">
                         <h3>Web Development & SEO</h3>
                         <p>Custom web development, responsive design, and strategic SEO optimization to enhance your digital presence and drive qualified traffic.</p>
@@ -266,11 +251,8 @@
             </div>
             
             <div class="services-grid" style="margin-top: 40px;">
-                <!-- Service 4 -->
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-headset"></i></div>
                     <div class="service-content">
                         <h3>Customer Support Solutions</h3>
                         <p>24/7 customer support, helpdesk solutions, and dispatch services to ensure business continuity and exceptional customer experiences.</p>
@@ -284,12 +266,8 @@
                         </ul>
                     </div>
                 </div>
-                
-                <!-- Service 5 -->
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
                     <div class="service-content">
                         <h3>Digital Marketing Services</h3>
                         <p>Data-driven digital marketing strategies to increase brand visibility, generate qualified leads, and drive conversions through targeted campaigns.</p>
@@ -303,12 +281,8 @@
                         </ul>
                     </div>
                 </div>
-                
-                <!-- Service 6 -->
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
                     <div class="service-content">
                         <h3>Cybersecurity & Compliance</h3>
                         <p>Comprehensive security services including vulnerability assessments, compliance auditing, and managed security operations to protect your digital assets.</p>
@@ -324,16 +298,12 @@
                 </div>
             </div>
             
-            <!-- Additional Services Section -->
             <div class="info-card" style="margin-top: 50px;">
                 <h3><i class="fas fa-plus-circle"></i> Additional Specialized Services</h3>
                 <p>Beyond our core offerings, we provide these additional specialized services to meet unique business needs:</p>
-                
                 <div class="services-grid" style="margin-top: 30px;">
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
+                        <div class="service-icon"><i class="fas fa-cloud"></i></div>
                         <div class="service-content">
                             <h3>Cloud Solutions</h3>
                             <p>Cloud migration, infrastructure management, and SaaS implementation for scalable business operations.</p>
@@ -344,13 +314,8 @@
                             </ul>
                         </div>
                     </div>
-                    
-
-                    
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
+                        <div class="service-icon"><i class="fas fa-database"></i></div>
                         <div class="service-content">
                             <h3>Data Analytics</h3>
                             <p>Business intelligence, data visualization, and predictive analytics to drive data-informed decisions.</p>
@@ -373,7 +338,6 @@
                 <h2>Our Vision & Strategic Framework</h2>
                 <p>Driving digital excellence through integrated solutions and measurable business outcomes.</p>
             </div>
-            
             <div class="vision-container">
                 <div class="vision-card">
                     <h3><span>1</span> Value Propositions</h3>
@@ -386,7 +350,6 @@
                         <li><i class="fas fa-check"></i> <strong>24/7 Operational Support:</strong> Ensuring business continuity through round-the-clock services</li>
                     </ul>
                 </div>
-                
                 <div class="vision-card">
                     <h3><span>2</span> Revenue Streams</h3>
                     <ul class="service-list">
@@ -398,7 +361,6 @@
                         <li><i class="fas fa-dollar-sign"></i> <strong>Hybrid Models:</strong> Base fee + performance incentives</li>
                     </ul>
                 </div>
-                
                 <div class="vision-card">
                     <h3><span>3</span> Key Differentiators</h3>
                     <ul class="service-list">
@@ -414,17 +376,16 @@
         </div>
     </section>
 
-    <!-- CTA Section with Updated Stats -->
+    <!-- CTA Section -->
     <section style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; padding: 100px 0; text-align: center;">
         <div class="container">
-            <h2 style="color: white; font-size: 2.8rem; margin-bottom: 30px;">Join 427+ Businesses Transformed by Key Kraft</h2>
+            <h2 style="color: white; font-size: 2.8rem; margin-bottom: 30px;">Join 427+ Businesses Transformed by Skyworld Revenue Group</h2>
             <p style="font-size: 1.3rem; max-width: 800px; margin: 0 auto 50px; opacity: 0.9;">
                 Experience an average of 35% revenue growth within your first year with our comprehensive IT solutions.
             </p>
             <a href="#contact" class="btn btn-secondary pulse-animation" style="font-size: 1.2rem; padding: 20px 50px;">
-                <i class="fas fa-key"></i> Unlock Your Potential Today
+                <i class="fas fa-chart-line"></i> Grow Your Revenue Today
             </a>
-            
             <div class="updated-hero-stats" style="margin-top: 80px;">
                 <div class="updated-hero-stat">
                     <div class="updated-hero-stat-number">99.2<span>%</span></div>
@@ -451,7 +412,7 @@
         <div class="container">
             <div class="section-title">
                 <h2>Get In Touch</h2>
-                <p>Contact us to discuss your IT service needs and receive a customized solution proposal.</p>
+                <p>Contact us to discuss your revenue growth needs and receive a customized solution proposal.</p>
             </div>
             
             <div style="max-width: 800px; margin: 0 auto;">
@@ -462,28 +423,28 @@
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px;">
                             <div>
                                 <label for="name" style="display: block; margin-bottom: 10px; font-weight: 600; color: var(--dark);">Full Name *</label>
-                                <input type="text" id="name" style="width: 100%; padding: 16px; border: 1px solid var(--light-gray); border-radius: 8px; font-family: 'Open Sans', sans-serif; font-size: 1rem; transition: var(--transition);" required>
+                                <input type="text" id="name" name="name" style="width: 100%; padding: 16px; border: 1px solid var(--light-gray); border-radius: 8px; font-family: 'Open Sans', sans-serif; font-size: 1rem; transition: var(--transition);" required>
                             </div>
                             <div>
                                 <label for="company" style="display: block; margin-bottom: 10px; font-weight: 600; color: var(--dark);">Company Name</label>
-                                <input type="text" id="company" style="width: 100%; padding: 16px; border: 1px solid var(--light-gray); border-radius: 8px; font-family: 'Open Sans', sans-serif; font-size: 1rem; transition: var(--transition);">
+                                <input type="text" id="company" name="company" style="width: 100%; padding: 16px; border: 1px solid var(--light-gray); border-radius: 8px; font-family: 'Open Sans', sans-serif; font-size: 1rem; transition: var(--transition);">
                             </div>
                         </div>
                         
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px;">
                             <div>
                                 <label for="email" style="display: block; margin-bottom: 10px; font-weight: 600; color: var(--dark);">Email Address *</label>
-                                <input type="email" id="email" style="width: 100%; padding: 16px; border: 1px solid var(--light-gray); border-radius: 8px; font-family: 'Open Sans', sans-serif; font-size: 1rem; transition: var(--transition);" required>
+                                <input type="email" id="email" name="email" style="width: 100%; padding: 16px; border: 1px solid var(--light-gray); border-radius: 8px; font-family: 'Open Sans', sans-serif; font-size: 1rem; transition: var(--transition);" required>
                             </div>
                             <div>
                                 <label for="phone" style="display: block; margin-bottom: 10px; font-weight: 600; color: var(--dark);">Phone Number</label>
-                                <input type="tel" id="phone" style="width: 100%; padding: 16px; border: 1px solid var(--light-gray); border-radius: 8px; font-family: 'Open Sans', sans-serif; font-size: 1rem; transition: var(--transition);">
+                                <input type="tel" id="phone" name="phone" style="width: 100%; padding: 16px; border: 1px solid var(--light-gray); border-radius: 8px; font-family: 'Open Sans', sans-serif; font-size: 1rem; transition: var(--transition);">
                             </div>
                         </div>
                         
                         <div>
                             <label for="segment" style="display: block; margin-bottom: 10px; font-weight: 600; color: var(--dark);">Primary Business Segment</label>
-                            <select id="segment" style="width: 100%; padding: 16px; border: 1px solid var(--light-gray); border-radius: 8px; font-family: 'Open Sans', sans-serif; font-size: 1rem; transition: var(--transition);">
+                            <select id="segment" name="segment" style="width: 100%; padding: 16px; border: 1px solid var(--light-gray); border-radius: 8px; font-family: 'Open Sans', sans-serif; font-size: 1rem; transition: var(--transition);">
                                 <option value="">Select your industry</option>
                                 <option value="ecommerce">E-commerce Business</option>
                                 <option value="healthcare">Healthcare Provider</option>
@@ -498,23 +459,25 @@
                         <div>
                             <label style="display: block; margin-bottom: 10px; font-weight: 600; color: var(--dark);">Services of Interest</label>
                             <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px;">
-                                <div><input type="checkbox" id="service1" value="ecommerce"> <label for="service1">E-commerce Solutions</label></div>
-                                <div><input type="checkbox" id="service2" value="healthcare"> <label for="service2">Healthcare IT</label></div>
-                                <div><input type="checkbox" id="service3" value="webdev"> <label for="service3">Web Development & SEO</label></div>
-                                <div><input type="checkbox" id="service4" value="support"> <label for="service4">Customer Support</label></div>
-                                <div><input type="checkbox" id="service5" value="marketing"> <label for="service5">Digital Marketing</label></div>
-                                <div><input type="checkbox" id="service6" value="cybersecurity"> <label for="service6">Cybersecurity & Compliance</label></div>
+                                <div><input type="checkbox" id="service1" value="E-commerce Solutions"> <label for="service1">E-commerce Solutions</label></div>
+                                <div><input type="checkbox" id="service2" value="Healthcare IT"> <label for="service2">Healthcare IT</label></div>
+                                <div><input type="checkbox" id="service3" value="Web Development & SEO"> <label for="service3">Web Development & SEO</label></div>
+                                <div><input type="checkbox" id="service4" value="Customer Support"> <label for="service4">Customer Support</label></div>
+                                <div><input type="checkbox" id="service5" value="Digital Marketing"> <label for="service5">Digital Marketing</label></div>
+                                <div><input type="checkbox" id="service6" value="Cybersecurity & Compliance"> <label for="service6">Cybersecurity & Compliance</label></div>
                             </div>
                         </div>
                         
                         <div>
                             <label for="message" style="display: block; margin-bottom: 10px; font-weight: 600; color: var(--dark);">Your Business Needs</label>
-                            <textarea id="message" rows="6" style="width: 100%; padding: 16px; border: 1px solid var(--light-gray); border-radius: 8px; font-family: 'Open Sans', sans-serif; font-size: 1rem; transition: var(--transition);" placeholder="Tell us about your business challenges and goals..."></textarea>
+                            <textarea id="message" name="message" rows="6" style="width: 100%; padding: 16px; border: 1px solid var(--light-gray); border-radius: 8px; font-family: 'Open Sans', sans-serif; font-size: 1rem; transition: var(--transition);" placeholder="Tell us about your business challenges and goals..."></textarea>
                         </div>
                         
-                        <button type="submit" class="btn" style="justify-self: center; min-width: 250px; margin-top: 20px; padding: 18px 40px;">
+                        <button type="submit" id="submitBtn" class="btn" style="justify-self: center; min-width: 250px; margin-top: 20px; padding: 18px 40px;">
                             <i class="fas fa-paper-plane"></i> Submit Request
                         </button>
+
+                        <p id="formStatus" style="text-align:center; font-weight:600; font-size:1rem; display:none; margin-top: 10px;"></p>
                     </form>
                 </div>
             </div>
@@ -559,43 +522,21 @@
                     <a href="solutions.html" class="footer-link"><i class="fas fa-chevron-right"></i> Security Shield</a>
                 </div>
                 <div class="footer-col">
-    <h4>Contact Info</h4>
-
-    <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:14px;">
-        <i class="fas fa-map-marker-alt" style="color:var(--secondary);margin-top:3px;"></i>
-        <span style="color:rgba(255,255,255,0.7);font-size:0.9rem;">78 Lincoln Hwy pa, 19421<br>Austin, TX, United States, Texas</span>
-    </div>
- <!--
-    <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:14px;">
-        <i class="fas fa-map-marker-alt" style="color:var(--secondary);margin-top:3px;"></i>
-        <span style="color:rgba(255,255,255,0.7);font-size:0.9rem;">5900 Balcones Drive STE 100, Austin, TX</span>
-    </div>
-
-
-    <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:14px;">
-        <i class="fas fa-map-marker-alt" style="color:var(--secondary);margin-top:3px;"></i>
-        <span style="color:rgba(255,255,255,0.7);font-size:0.9rem;">Musa Market Shop No. 2 Shah Kam Chowk, Opposite Punjab Society, Defense Road, Lahore</span>
-    </div>
-
-    
-    <a href="tel:+447403190687" class="footer-link" style="gap:12px;">
-        <i class="fas fa-phone" style="color:var(--secondary);"></i> +44 7403 190687
-    </a>
-        -->
-
-    <!-- Phone 2 -->
-    <a href="tel:+13137873182" class="footer-link" style="gap:12px;">
-        <i class="fas fa-phone" style="color:var(--secondary);"></i>+1 (313) 787 3182
-    </a>
-
-    <!-- Email -->
-    <a href="https://mail.google.com/mail/?view=cm&to=skyworldrevenuegroup@gmail.com" class="footer-link" style="gap:12px;" target="_blank" rel="noopener noreferrer">
-    <i class="fas fa-envelope" style="color:var(--secondary);"></i> info@Skyworldrevenuegroup.com
-</a>
-</div>
+                    <h4>Contact Info</h4>
+                    <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:14px;">
+                        <i class="fas fa-map-marker-alt" style="color:var(--secondary);margin-top:3px;"></i>
+                        <span style="color:rgba(255,255,255,0.7);font-size:0.9rem;">78 Lincoln Hwy PA, 19421</span>
+                    </div>
+                    <a href="tel:+13137873182" class="footer-link" style="gap:12px;">
+                        <i class="fas fa-phone" style="color:var(--secondary);"></i> +1 (313) 787 3182
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&to=skyworldrevenuegroup@gmail.com" class="footer-link" style="gap:12px;" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-envelope" style="color:var(--secondary);"></i> info@Skyworldrevenuegroup.com
+                    </a>
+                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Skyworld revenue group. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                <p>&copy; 2024 Skyworld Revenue Group. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
                 <p>Serving 427+ clients with 12 specialized services across 6 industries</p>
             </div>
         </div>
@@ -611,8 +552,6 @@
             const icon = this.querySelector('i');
             icon.classList.toggle('fa-bars');
             icon.classList.toggle('fa-times');
-            
-            // Add animation to menu items
             if (navMenu.classList.contains('active')) {
                 const menuItems = navMenu.querySelectorAll('li');
                 menuItems.forEach((item, index) => {
@@ -622,25 +561,16 @@
             }
         });
         
-        // Close mobile menu when clicking on a link
         document.querySelectorAll('#navMenu a').forEach(link => {
             link.addEventListener('click', (e) => {
-                // Prevent default only if it's a hash link
                 if (link.getAttribute('href').startsWith('#')) {
                     e.preventDefault();
-                    
                     const targetId = link.getAttribute('href');
                     const targetElement = document.querySelector(targetId);
-                    
                     if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 100,
-                            behavior: 'smooth'
-                        });
+                        window.scrollTo({ top: targetElement.offsetTop - 100, behavior: 'smooth' });
                     }
                 }
-                
-                // Close mobile menu
                 navMenu.classList.remove('active');
                 mobileMenuBtn.querySelector('i').classList.add('fa-bars');
                 mobileMenuBtn.querySelector('i').classList.remove('fa-times');
@@ -650,145 +580,116 @@
         // Header scroll effect
         const header = document.getElementById('mainHeader');
         window.addEventListener('scroll', function() {
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
+            header.classList.toggle('scrolled', window.scrollY > 50);
         });
         
-        // Form submission
+        // ✅ EmailJS Contact Form
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // Get form data
-            const name = document.getElementById('name').value;
-            const company = document.getElementById('company').value;
-            const email = document.getElementById('email').value;
-            
-            // Create success message
-            const successMessage = document.createElement('div');
-            successMessage.innerHTML = `
-                <div style="background: #d4edda; color: #155724; padding: 25px; border-radius: 12px; margin-top: 20px; text-align: center; border: 1px solid #c3e6cb; animation: fadeInUp 0.5s ease;">
-                    <h3 style="color: #155724; margin-bottom: 15px; display: flex; align-items: center; justify-content: center; gap: 10px;">
-                        <i class="fas fa-check-circle"></i> Thank You!
-                    </h3>
-                    <p>Thank you <strong>${name}</strong>${company ? ` from <strong>${company}</strong>` : ''}! We have received your inquiry and will contact you at <strong>${email}</strong> within 48 hours.</p>
-                </div>
-            `;
-            
-            // Insert success message before form
-            this.parentNode.insertBefore(successMessage, this);
-            
-            // Hide form
-            this.style.opacity = '0.5';
-            this.style.pointerEvents = 'none';
-            
-            // Reset form after 5 seconds
-            setTimeout(() => {
-                this.reset();
-                this.style.opacity = '1';
-                this.style.pointerEvents = 'all';
-                successMessage.remove();
-            }, 5000);
+
+            const btn = document.getElementById('submitBtn');
+            const status = document.getElementById('formStatus');
+
+            // Collect checked services
+            const services = [...document.querySelectorAll('input[type="checkbox"]:checked')]
+                                .map(cb => cb.value).join(', ') || 'None selected';
+
+            const templateParams = {
+                name:     document.getElementById('name').value,
+                company:  document.getElementById('company').value || 'N/A',
+                email:    document.getElementById('email').value,
+                phone:    document.getElementById('phone').value || 'N/A',
+                segment:  document.getElementById('segment').value || 'N/A',
+                services: services,
+                message:  document.getElementById('message').value || 'N/A',
+            };
+
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            status.style.display = 'none';
+
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams) // 🔴 Replace these
+                .then(() => {
+                    status.style.display = 'block';
+                    status.style.color = 'green';
+                    status.textContent = '✅ Message sent successfully! We will get back to you soon.';
+                    document.getElementById('contactForm').reset();
+                    btn.disabled = false;
+                    btn.innerHTML = '<i class="fas fa-paper-plane"></i> Submit Request';
+                })
+                .catch((err) => {
+                    status.style.display = 'block';
+                    status.style.color = 'red';
+                    status.textContent = '❌ Failed to send. Please email us directly at skyworldrevenuegroup@gmail.com';
+                    btn.disabled = false;
+                    btn.innerHTML = '<i class="fas fa-paper-plane"></i> Submit Request';
+                    console.error('EmailJS error:', err);
+                });
         });
         
-        // Smooth scrolling for all anchor links
+        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                
                 const targetId = this.getAttribute('href');
                 if(targetId === '#') return;
-                
                 const targetElement = document.querySelector(targetId);
                 if(targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 100,
-                        behavior: 'smooth'
-                    });
+                    window.scrollTo({ top: targetElement.offsetTop - 100, behavior: 'smooth' });
                 }
             });
         });
         
-        // Animate elements on scroll
+        // Animate on scroll
         function animateOnScroll() {
             const elements = document.querySelectorAll('.service-card, .vision-card, .solution-card, .stat-item');
-            
             elements.forEach(element => {
                 const elementTop = element.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-                
-                if (elementTop < windowHeight - 100) {
+                if (elementTop < window.innerHeight - 100) {
                     element.classList.add('animate');
                 }
             });
         }
-        
-        // Initialize scroll animation
         window.addEventListener('scroll', animateOnScroll);
         window.addEventListener('load', animateOnScroll);
         
-        // Animate stats counters - UPDATED FOR REALISTIC NUMBERS
+        // Stats counter animation
         function animateStats() {
-            // Animate hero stats
             const heroStatNumbers = document.querySelectorAll('.updated-hero-stat-number[data-count]');
-            
             heroStatNumbers.forEach(stat => {
                 const target = parseFloat(stat.getAttribute('data-count'));
                 const duration = 2000;
                 const increment = target / (duration / 16);
                 let current = 0;
-                
                 const timer = setInterval(() => {
                     current += increment;
                     if (current >= target) {
-                        if (target % 1 === 0) {
-                            stat.textContent = Math.floor(target);
-                        } else {
-                            stat.textContent = target.toFixed(1);
-                        }
+                        stat.textContent = target % 1 === 0 ? Math.floor(target) : target.toFixed(1);
                         clearInterval(timer);
                     } else {
-                        if (target % 1 === 0) {
-                            stat.textContent = Math.floor(current);
-                        } else {
-                            stat.textContent = current.toFixed(1);
-                        }
+                        stat.textContent = target % 1 === 0 ? Math.floor(current) : current.toFixed(1);
                     }
                 }, 16);
             });
-            
-            // Animate main stats section
+
             const statNumbers = document.querySelectorAll('.stat-number[data-count]');
-            
             statNumbers.forEach(stat => {
                 const target = parseFloat(stat.getAttribute('data-count'));
                 const duration = 2500;
                 const increment = target / (duration / 16);
                 let current = 0;
-                
                 const timer = setInterval(() => {
                     current += increment;
                     if (current >= target) {
-                        if (target % 1 === 0) {
-                            stat.innerHTML = Math.floor(target);
-                        } else {
-                            stat.innerHTML = target.toFixed(1);
-                        }
+                        stat.innerHTML = target % 1 === 0 ? Math.floor(target) : target.toFixed(1);
                         clearInterval(timer);
                     } else {
-                        if (target % 1 === 0) {
-                            stat.innerHTML = Math.floor(current);
-                        } else {
-                            stat.innerHTML = current.toFixed(1);
-                        }
+                        stat.innerHTML = target % 1 === 0 ? Math.floor(current) : current.toFixed(1);
                     }
                 }, 16);
             });
         }
         
-        // Initialize stats animation when in view
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -801,44 +702,29 @@
         observer.observe(document.querySelector('.hero'));
         observer.observe(document.querySelector('.stats-section'));
         
-        // Create floating elements
+        // Floating elements
         function createFloatingElements() {
             const container = document.getElementById('floatingElements');
             if (!container) return;
-            
-            // Clear existing elements
             container.innerHTML = '';
-            
-            // Create 15 floating elements
             for (let i = 0; i < 15; i++) {
                 const element = document.createElement('div');
                 element.className = 'floating-element';
-                
-                // Random size between 20px and 80px
                 const size = Math.random() * 60 + 20;
                 element.style.width = `${size}px`;
                 element.style.height = `${size}px`;
-                
-                // Random position
                 element.style.left = `${Math.random() * 100}%`;
                 element.style.top = `${Math.random() * 100}%`;
-                
-                // Random animation
                 const duration = Math.random() * 20 + 10;
                 const delay = Math.random() * 5;
                 element.style.animation = `float ${duration}s ease-in-out ${delay}s infinite`;
-                
-                // Random opacity
                 element.style.opacity = Math.random() * 0.1 + 0.05;
-                
                 container.appendChild(element);
             }
         }
-        
-        // Initialize floating elements
         createFloatingElements();
         
-        // Add input focus effects
+        // Input focus effects
         const inputs = document.querySelectorAll('input, textarea, select');
         inputs.forEach(input => {
             input.addEventListener('focus', function() {
@@ -846,7 +732,6 @@
                 this.style.boxShadow = '0 0 0 3px rgba(26, 75, 194, 0.1)';
                 this.style.transform = 'translateY(-2px)';
             });
-            
             input.addEventListener('blur', function() {
                 this.style.borderColor = 'var(--light-gray)';
                 this.style.boxShadow = 'none';
@@ -854,25 +739,11 @@
             });
         });
         
-        // Add page load animation
+        // Page load animation
         window.addEventListener('load', function() {
             document.body.style.opacity = '0';
             document.body.style.transition = 'opacity 0.8s ease';
-            
-            setTimeout(() => {
-                document.body.style.opacity = '1';
-            }, 100); 
-        });
-        
-        
-        // Update page title with dynamic stats
-        document.addEventListener('DOMContentLoaded', function() {
-            setTimeout(() => {
-                const title = document.querySelector('title');
-                if (title) {
-                    title.textContent = "Key Kraft IT Services - 12 Services, 427+ Clients, 24/7 Support";
-                }
-            }, 3000);
+            setTimeout(() => { document.body.style.opacity = '1'; }, 100);
         });
     </script>
 </body>
